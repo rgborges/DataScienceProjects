@@ -1,13 +1,13 @@
-#----------Kaggle - An·lise de Adimissıes nas Universidades EUA----------------
-# Abrindo o arquivo para as an·lises
+#----------Kaggle - An√°lise de Adimiss√µes nas Universidades EUA----------------
+# Abrindo o arquivo para as an√°lises
 library(readxl)
-admission_dataframe <- read.csv("C:/Users/rborges/OneDrive - AQUARIUS SOFTWARE LTDA/CodeLab/Datalab/Dataset - Graduation Program/Admission_Predict.csv")
+admission_dataframe <- read.csv("C:/Users/rborges/../CodeLab/Datalab/Dataset - Graduation Program/Admission_Predict.csv")
 View(admission_dataframe)
 
-#EstatistÌcas Descritivas
+#Estatist√≠cas Descritivas
 summary(admission_dataframe)
 
-# Vari·vel Y = Chance de Admiss„o, Quais vari·veis importam para criarmos um modelo preditivo?
+# Vari√°vel Y = Chance de Admiss√£o, Quais vari√°veis importam para criarmos um modelo preditivo?
 library(PerformanceAnalytics)
 chart.Correlation(admission_dataframe)
 
